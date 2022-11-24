@@ -8,6 +8,7 @@ body{
   width: 50vw;
   height: auto;
   margin: auto;
+  border-radius: 5px;
 }
 .App h1{
   text-align:center;

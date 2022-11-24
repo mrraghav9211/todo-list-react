@@ -11,9 +11,13 @@ export const createTodos = createSlice({
   initialState,
   reducers: {
     addTodos: (state, action) => {
+      if(action.payload !== ''){
       state.isTrue
         ? (state.data[state.idx] = action.payload)
         : state.data.push(action.payload);
+      }else{
+        alert("Plz Enter something");
+      }
       state.isTrue = false;
       state.query = "";
     },
